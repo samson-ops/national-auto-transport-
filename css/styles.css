@@ -310,3 +310,12 @@ html,body{overflow-x:hidden;max-width:100%}
   .hero-in{padding-top:10px;padding-bottom:34px}
   .nav-links{top:64px}
 }
+
+/* Mobile polish: widget in a clean white card so it doesn't float on the photo */
+@media(max-width:900px){
+  .hero-in{padding-top:16px}
+  .hero-in #quote{background:#fff;border-radius:8px;padding:6px;box-shadow:0 12px 32px rgba(0,10,35,.4)}
+  .hero-in #quote iframe{border-radius:6px}
+  .hero h1{font-size:28px}
+  .hero .crumbs{display:none}
+}
