@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>National Auto Transport | Nationwide Car Shipping Company</title>
+<meta name="description" content="National Auto Transport is a licensed, bonded and insured auto transport broker. Door-to-door car shipping to all 50 states. Free quotes, no upfront deposit. Call (888) 555-0142.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#00235E;
+  --blue-dark:#001A46;
+  --blue-link:#0B57C2;
+  --orange:#F26722;
+  --orange-dark:#D8570F;
+  --green:#1E8E3E;
+  --bg:#FFFFFF;
+  --bg-gray:#F5F6F8;
+  --border:#DDE1E7;
+  --text:#333B47;
+  --heading:#1B2434;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#FFFFFF;--bg-gray:#F5F6F8;--border:#DDE1E7;--text:#333B47;--heading:#1B2434}
+}
+:root[data-theme="dark"]{--bg:#FFFFFF;--bg-gray:#F5F6F8;--border:#DDE1E7;--text:#333B47;--heading:#1B2434}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{font-family:'Roboto',Arial,Helvetica,sans-serif;color:var(--text);background:var(--bg);font-size:16px;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:var(--blue-link)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+h1,h2,h3,h4{color:var(--heading);line-height:1.25;font-weight:700}
+h2{font-size:30px;text-align:center}
+.section-sub{text-align:center;max-width:680px;margin:10px auto 0;color:#5A6472}
+section{padding:55px 0}
+.btn{display:inline-block;font-weight:700;font-size:16px;border:none;border-radius:4px;padding:14px 28px;cursor:pointer;text-decoration:none;text-align:center}
+.btn-orange{background:var(--orange);color:#fff}
+.btn-orange:hover{background:var(--orange-dark)}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:var(--blue-dark)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+
+/* TOP BAR */
+.topbar{background:var(--blue-dark);color:#C7D3E8;font-size:13px;padding:7px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.topbar a{color:#fff;text-decoration:none;font-weight:500}
+@media(max-width:640px){.topbar .t-left{display:none}.topbar .wrap{justify-content:center}}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--border);box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.nav-in{display:flex;align-items:center;gap:22px;height:78px}
+.brand img{height:44px;width:auto}
+.nav-links{display:flex;gap:22px;margin-left:auto;list-style:none;align-items:center}
+.nav-links a{text-decoration:none;font-weight:500;font-size:15px;color:var(--heading)}
+.nav-links a:hover{color:var(--blue-link)}
+.nav-phone{text-align:right;margin-left:6px}
+.nav-phone small{display:block;font-size:11.5px;color:#6A7482;font-weight:500;text-transform:uppercase;letter-spacing:.4px}
+.nav-phone a{font-size:21px;font-weight:900;color:var(--orange);text-decoration:none;line-height:1.1}
+.nav-quote{background:var(--blue);color:#fff!important;padding:11px 18px;border-radius:4px;font-weight:700!important}
+.nav-quote:hover{background:var(--blue-dark);color:#fff!important}
+.nav-toggle{display:none;margin-left:auto;background:none;border:1px solid var(--border);border-radius:4px;padding:7px 11px;font-size:20px;color:var(--blue);cursor:pointer}
+@media(max-width:980px){
+  .nav-links{display:none;position:absolute;top:78px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:0 20px 14px;border-bottom:1px solid var(--border);align-items:stretch}
+  .nav-links.open{display:flex}
+  .nav-links li{border-top:1px solid var(--border)}
+  .nav-links a{display:block;padding:13px 2px}
+  .nav-links .nav-quote{margin-top:10px;text-align:center}
+  .nav-toggle{display:block}
+  .nav-phone{margin-left:auto}
+  .nav-phone a{font-size:18px}
+}
+
+/* HERO */
+.hero{position:relative;color:#fff}
+.hero-bg{position:absolute;inset:0;background-image:url(images/hero-banner.jpg);background-size:cover;background-position:center 60%}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,26,70,.92) 0%,rgba(0,26,70,.75) 45%,rgba(0,26,70,.35) 100%)}
+.hero-in{position:relative;display:grid;grid-template-columns:1fr 400px;gap:44px;padding:58px 0 64px;align-items:center}
+.hero h1{color:#fff;font-size:40px;font-weight:900;line-height:1.15}
+.hero .lead{margin-top:14px;font-size:18px;color:#E4EBF7;max-width:520px}
+.hero-checks{margin-top:20px;list-style:none;font-size:16px}
+.hero-checks li{padding:4px 0 4px 28px;position:relative}
+.hero-checks li::before{content:"";position:absolute;left:0;top:9px;width:18px;height:18px;border-radius:50%;background:var(--green) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>') center/12px no-repeat}
+.hero-rating{margin-top:22px;display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:6px;padding:9px 14px;font-size:14px}
+.hero-rating b{font-size:16px}
+.hero-rating .st{color:#FBBC04;font-size:15px;letter-spacing:1px}
+@media(max-width:900px){.hero-in{grid-template-columns:1fr;padding:42px 0 50px}.hero h1{font-size:31px}}
+
+/* QUOTE BOX */
+.quote{background:#fff;border-radius:6px;padding:22px;color:var(--text);box-shadow:0 10px 34px rgba(0,10,35,.4);border-top:5px solid var(--orange)}
+.quote h2{font-size:21px;text-align:left;margin-bottom:2px}
+.quote .q-note{font-size:13.5px;color:#5A6472;margin-bottom:12px}
+.quote label{display:block;font-size:13px;font-weight:700;color:var(--heading);margin:11px 0 4px}
+.quote input,.quote select{width:100%;font-family:inherit;font-size:15px;padding:11px;border:1px solid #C4CBD6;border-radius:4px;background:#fff;color:var(--heading)}
+.quote input:focus,.quote select:focus{border-color:var(--blue-link);outline:none;box-shadow:0 0 0 2px rgba(11,87,194,.15)}
+.q-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.quote .btn{width:100%;margin-top:16px;font-size:17px;text-transform:uppercase;letter-spacing:.3px}
+.q-fine{font-size:12px;margin-top:9px;text-align:center;color:#6A7482}
+.q-done{display:none;text-align:center;padding:30px 6px}
+.q-done strong{display:block;font-size:20px;color:var(--green);margin-bottom:8px}
+
+/* BADGE STRIP */
+.badges{background:#fff;border-bottom:1px solid var(--border);padding:20px 0}
+.badges .wrap{display:flex;justify-content:center;align-items:center;gap:38px;flex-wrap:wrap}
+.badge{display:flex;align-items:center;gap:9px;font-size:13.5px;font-weight:700;color:var(--heading)}
+.badge svg{width:30px;height:30px;fill:var(--blue)}
+.badge small{display:block;font-weight:400;color:#6A7482;font-size:12px}
+
+/* STEPS */
+.steps{background:var(--bg-gray)}
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+.step{background:#fff;border:1px solid var(--border);border-radius:6px;overflow:hidden}
+.step img{height:180px;width:100%;object-fit:cover}
+.step-body{padding:18px 20px 22px}
+.step-body .n{display:inline-block;background:var(--orange);color:#fff;font-weight:900;font-size:14px;border-radius:50%;width:26px;height:26px;line-height:26px;text-align:center;margin-bottom:8px}
+.step h3{font-size:19px;margin-bottom:6px}
+.step p{font-size:14.5px}
+@media(max-width:860px){.steps-grid{grid-template-columns:1fr}}
+
+/* SERVICES */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.svc-card{border:1px solid var(--border);border-radius:6px;background:#fff;overflow:hidden}
+.svc-card img{height:170px;width:100%;object-fit:cover}
+.svc-body{padding:16px 18px 18px}
+.svc-card h3{font-size:17px;margin-bottom:6px}
+.svc-card h3 a{color:var(--heading);text-decoration:none}
+.svc-card h3 a:hover{color:var(--blue-link);text-decoration:underline}
+.svc-card p{font-size:14px;color:#5A6472}
+.svc-more{font-size:13.5px;font-weight:700;text-decoration:none;display:inline-block;margin-top:8px}
+@media(max-width:860px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.svc-grid{grid-template-columns:1fr}}
+
+/* WHAT WE SHIP */
+.ship{background:var(--bg-gray)}
+.ship-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+.ship-card{position:relative;border-radius:6px;overflow:hidden;background:var(--blue-dark)}
+.ship-card img{height:170px;width:100%;object-fit:cover;transition:transform .2s ease}
+.ship-card:hover img{transform:scale(1.04)}
+.ship-card figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 12px 10px;font-weight:700;font-size:15px;color:#fff;background:linear-gradient(to top,rgba(0,15,40,.88),rgba(0,15,40,0))}
+@media(max-width:900px){.ship-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.ship-grid{grid-template-columns:1fr}}
+
+/* TIPS */
+.tips-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.tip-card{border:1px solid var(--border);border-radius:6px;background:#fff;overflow:hidden}
+.tip-card img{height:175px;width:100%;object-fit:cover}
+.tip-body{padding:16px 18px 20px}
+.tip-body .tag{font-size:11.5px;font-weight:700;color:var(--orange);text-transform:uppercase;letter-spacing:.5px}
+.tip-card h3{font-size:17px;margin:5px 0 6px}
+.tip-card p{font-size:14px;color:#5A6472}
+@media(max-width:860px){.tips-grid{grid-template-columns:1fr}}
+
+/* PRICING TABLE */
+.pricing{background:var(--bg-gray)}
+.price-table{width:100%;margin-top:34px;border-collapse:collapse;background:#fff;border:1px solid var(--border);font-size:15px}
+.price-table th{background:var(--blue);color:#fff;text-align:left;padding:13px 16px;font-size:14px}
+.price-table td{padding:12px 16px;border-top:1px solid var(--border)}
+.price-table tr:nth-child(even) td{background:#FAFBFC}
+.price-table .pr{font-weight:700;color:var(--heading);white-space:nowrap}
+.price-note{font-size:13px;color:#6A7482;margin-top:12px;text-align:center}
+.table-scroll{overflow-x:auto}
+.price-cta{text-align:center;margin-top:26px}
+
+/* GALLERY */
+.gal{padding-bottom:46px}
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:262px;gap:14px;overflow-x:auto;padding:32px 20px 12px;scroll-snap-type:x proximity;max-width:1140px;margin:0 auto}
+.rail::-webkit-scrollbar{height:8px}
+.rail::-webkit-scrollbar-thumb{background:#C4CBD6;border-radius:99px}
+.tile{position:relative;border-radius:6px;overflow:hidden;scroll-snap-align:start;background:var(--blue-dark)}
+.tile img{height:262px;width:100%;object-fit:cover}
+.tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 12px 10px;font-weight:700;font-size:15px;color:#fff;background:linear-gradient(to top,rgba(0,15,40,.85),rgba(0,15,40,0))}
+
+/* REVIEWS */
+.rev{background:#fff}
+.rev-head{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:18px;flex-wrap:wrap}
+.g-badge{display:flex;align-items:center;gap:10px;border:1px solid var(--border);border-radius:6px;padding:10px 16px;font-size:14px}
+.g-badge .g{font-weight:700;font-size:18px}
+.g-badge .g span:nth-child(1){color:#4285F4}.g-badge .g span:nth-child(2){color:#EA4335}.g-badge .g span:nth-child(3){color:#FBBC04}.g-badge .g span:nth-child(4){color:#4285F4}.g-badge .g span:nth-child(5){color:#34A853}.g-badge .g span:nth-child(6){color:#EA4335}
+.g-badge .st{color:#FBBC04;letter-spacing:1px}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}
+.rev-card{border:1px solid var(--border);border-radius:6px;padding:20px;background:#fff}
+.rev-top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.avatar{width:42px;height:42px;border-radius:50%;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.rev-name{font-weight:700;font-size:15px;color:var(--heading)}
+.rev-date{font-size:12.5px;color:#6A7482}
+.rev-card .st{color:#FBBC04;font-size:14px;letter-spacing:1px;margin-bottom:8px}
+.rev-card p{font-size:14.5px}
+.rev-route{margin-top:10px;font-size:12.5px;color:#6A7482;font-weight:500}
+@media(max-width:860px){.rev-grid{grid-template-columns:1fr}}
+
+/* WHY */
+.why{background:var(--bg-gray)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.why-cell{background:#fff;border:1px solid var(--border);border-radius:6px;padding:20px}
+.why-cell h3{font-size:16.5px;margin-bottom:6px;display:flex;align-items:center;gap:9px}
+.why-cell h3 svg{width:22px;height:22px;fill:var(--orange);flex-shrink:0}
+.why-cell p{font-size:14px;color:#5A6472}
+@media(max-width:860px){.why-grid{grid-template-columns:1fr}}
+
+/* FAQ */
+.faq-list{margin:34px auto 0;max-width:800px}
+.faq details{border:1px solid var(--border);border-radius:5px;margin-bottom:10px;background:#fff}
+.faq summary{cursor:pointer;list-style:none;font-weight:700;font-size:16px;color:var(--heading);padding:16px 48px 16px 18px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-52%);font-size:22px;color:var(--orange);font-weight:400}
+.faq details[open] summary::after{content:"−"}
+.faq .a{padding:0 18px 16px;font-size:15px;color:#48505C}
+
+/* SEO TEXT */
+.seo{border-top:1px solid var(--border);padding:44px 0}
+.seo h2{text-align:left;font-size:22px;margin-bottom:12px}
+.seo p{font-size:14.5px;color:#5A6472;margin-bottom:12px;max-width:900px}
+
+/* CTA */
+.cta{background:var(--blue);color:#fff;text-align:center;padding:56px 0}
+.cta h2{color:#fff;font-size:30px}
+.cta p{margin:12px auto 22px;max-width:560px;color:#D3DDF0;font-size:16.5px}
+.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta .call{background:#fff;color:var(--blue)}
+.cta .call:hover{background:#E8ECF4}
+
+/* FOOTER */
+footer{background:#0F1622;color:#9AA6B8;padding:48px 0 26px;font-size:14px}
+.foot-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr 1fr;gap:30px}
+.foot-grid h4{font-size:14px;color:#fff;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px}
+.foot-grid ul{list-style:none}
+.foot-grid li{margin-bottom:7px}
+.foot-grid a{color:#9AA6B8;text-decoration:none}
+.foot-grid a:hover{color:#fff;text-decoration:underline}
+.foot-logo{background:#fff;display:inline-block;border-radius:5px;padding:9px 13px;margin-bottom:13px}
+.foot-logo img{height:32px}
+.foot-lic{font-size:12.5px;margin-top:12px;color:#7C8898}
+.foot-bot{border-top:1px solid #232E40;margin-top:38px;padding-top:20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12.5px;color:#7C8898}
+@media(max-width:860px){.foot-grid{grid-template-columns:1fr 1fr}}
+
+/* MOBILE CALL BAR */
+.callbar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--orange);color:#fff;text-align:center;padding:13px;font-weight:900;font-size:17px;text-decoration:none;box-shadow:0 -3px 12px rgba(0,0,0,.2)}
+@media(max-width:760px){.callbar{display:block}body{padding-bottom:52px}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="t-left">Licensed &amp; Bonded Auto Transport Broker &nbsp;|&nbsp; MC #158942 &nbsp; USDOT #2851763</span>
+    <span>Mon–Sun 8am–9pm ET &nbsp;•&nbsp; <a href="tel:+18885550142">(888) 555-0142</a></span>
+  </div>
+</div>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="National Auto Transport home"><img src="images/logo.png" alt="National Auto Transport"></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks" onclick="var l=document.getElementById('navlinks');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a class="nav-quote" href="#quote">Free Quote</a></li>
+    </ul>
+    <div class="nav-phone">
+      <small>Call for a quote</small>
+      <a href="tel:+18885550142">(888) 555-0142</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-bg" role="img" aria-label="Loaded auto transport carrier on the highway at sunset"></div>
+  <div class="wrap hero-in">
+    <div>
+      <h1>Nationwide Car Shipping,<br>Door to Door</h1>
+      <p class="lead">National Auto Transport ships cars, trucks, SUVs and motorcycles to all 50 states. Get an all-in quote in minutes — no deposit required until your vehicle is dispatched.</p>
+      <ul class="hero-checks">
+        <li>Licensed, bonded &amp; insured (FMCSA)</li>
+        <li>No upfront deposit — pay at dispatch</li>
+        <li>Open &amp; enclosed carriers available</li>
+        <li>Door-to-door pickup and delivery</li>
+      </ul>
+      <div class="hero-rating">
+        <span class="st">★★★★★</span>
+        <span><b>4.9/5</b> — 512 verified customer reviews</span>
+      </div>
+    </div>
+    <div class="quote" id="quote">
+      <form id="qform" novalidate>
+        <h2>Get a Free Instant Quote</h2>
+        <p class="q-note">No obligation. No spam. No deposit required.</p>
+        <div class="q-row">
+          <div>
+            <label for="from">Ship FROM (ZIP or city)</label>
+            <input id="from" name="from" placeholder="Boca Raton, FL" required>
+          </div>
+          <div>
+            <label for="to">Ship TO (ZIP or city)</label>
+            <input id="to" name="to" placeholder="Dallas, TX" required>
+          </div>
+        </div>
+        <label for="vehicle">Vehicle (year, make, model)</label>
+        <input id="vehicle" name="vehicle" placeholder="2022 Honda CR-V" required>
+        <div class="q-row">
+          <div>
+            <label for="type">Transport type</label>
+            <select id="type" name="type"><option>Open (most popular)</option><option>Enclosed</option><option>Not sure</option></select>
+          </div>
+          <div>
+            <label for="when">First available date</label>
+            <select id="when" name="when"><option>ASAP</option><option>Within 1 week</option><option>Within 2 weeks</option><option>Flexible</option></select>
+          </div>
+        </div>
+        <label for="phone">Phone number</label>
+        <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" required>
+        <button class="btn btn-orange" type="submit">Get My Free Quote</button>
+        <p class="q-fine">Or call <a href="tel:+18885550142"><b>(888) 555-0142</b></a> to speak with a specialist</p>
+      </form>
+      <div class="q-done" id="qdone">
+        <strong>✓ Quote request received</strong>
+        <p>A shipping specialist will call or text you shortly with your all-in price. Need it now? Call <a href="tel:+18885550142"><b>(888) 555-0142</b></a>.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="badges">
+  <div class="wrap">
+    <div class="badge"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg><span>FMCSA Licensed<small>MC #158942 • USDOT #2851763</small></span></div>
+    <div class="badge"><svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg><span>Fully Insured Carriers<small>Cargo coverage on every load</small></span></div>
+    <div class="badge"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><span>4.9/5 Rated<small>512+ verified reviews</small></span></div>
+    <div class="badge"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg><span>7 Days a Week<small>8am–9pm ET support</small></span></div>
+  </div>
+</div>
+
+<section class="steps" id="how">
+  <div class="wrap">
+    <h2>How Car Shipping Works</h2>
+    <p class="section-sub">Shipping a vehicle with us is a simple 3-step process. Most customers book in under 10 minutes.</p>
+    <div class="steps-grid">
+      <article class="step">
+        <img src="images/step-1-quote.jpg" alt="Auto transport carrier picking up vehicles in a residential neighborhood">
+        <div class="step-body">
+          <span class="n">1</span>
+          <h3>Get Your Free Quote</h3>
+          <p>Enter your route and vehicle info online or call us. You'll receive an all-in price with no hidden fees — the quote you get is the price you pay.</p>
+        </div>
+      </article>
+      <article class="step">
+        <img src="images/step-2-dispatch.jpg" alt="Driver loading a sedan onto an open auto transport carrier">
+        <div class="step-body">
+          <span class="n">2</span>
+          <h3>We Dispatch a Carrier</h3>
+          <p>We assign your shipment to a licensed, insured carrier from our vetted network and schedule pickup at your door on your preferred dates.</p>
+        </div>
+      </article>
+      <article class="step">
+        <img src="images/step-3-delivery.jpg" alt="Customer photographing and inspecting a vehicle at delivery">
+        <div class="step-body">
+          <span class="n">3</span>
+          <h3>Your Vehicle Is Delivered</h3>
+          <p>Track your shipment in transit. At delivery, you inspect the vehicle, sign the Bill of Lading, and pay the driver the balance. That's it.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>Our Auto Transport Services</h2>
+    <p class="section-sub">From daily drivers to dealer fleets, we ship every type of vehicle on every major route in the country.</p>
+    <div class="svc-grid">
+      <article class="svc-card"><img src="images/svc-open-transport.jpg" alt="Open car carrier loaded with sedans on the highway" loading="lazy"><div class="svc-body"><h3><a href="#quote">Open Car Transport</a></h3><p>The industry standard and most affordable option. Your vehicle is shipped on an open carrier — the same way dealerships move new cars.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
+      <article class="svc-card"><img src="images/svc-enclosed.jpg" alt="Sports car loading into an enclosed transport trailer" loading="lazy"><div class="svc-body"><h3><a href="#quote">Enclosed Auto Transport</a></h3><p>Fully enclosed trailers protect classic, exotic, and luxury vehicles from weather and road debris. Recommended for high-value vehicles.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
+      <article class="svc-card"><img src="images/svc-door-to-door.jpg" alt="Muscle car being unloaded from an enclosed trailer in a driveway" loading="lazy"><div class="svc-body"><h3><a href="#quote">Door-to-Door Shipping</a></h3><p>The driver picks up and delivers as close to your address as legally and safely possible. No terminals, no extra trips.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
+      <article class="svc-card"><img src="images/svc-state-to-state.jpg" alt="Car carrier loaded with SUVs crossing state lines" loading="lazy"><div class="svc-body"><h3><a href="#quote">State-to-State Shipping</a></h3><p>Next-state-over or across the region, we cover every lane between all 50 states, including Alaska and Hawaii port service.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
+      <article class="svc-card"><img src="images/svc-cross-country.jpg" alt="Auto transport truck on a cross-country mountain highway" loading="lazy"><div class="svc-body"><h3><a href="#quote">Cross-Country Transport</a></h3><p>Coast-to-coast shipping on major interstate lanes, typically delivered in 7–10 days with a single dedicated carrier.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
+      <article class="svc-card"><img src="images/svc-expedited.jpg" alt="Blue transport truck hauling vehicles at sunrise" loading="lazy"><div class="svc-body"><h3><a href="#quote">Expedited Shipping</a></h3><p>Need your vehicle picked up in 24–48 hours? Expedited dispatch puts your shipment at the front of the line.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
+      <article class="svc-card"><img src="images/svc-terminal.jpg" alt="Car carrier loading vehicles at a terminal yard" loading="lazy"><div class="svc-body"><h3><a href="#quote">Terminal-to-Terminal</a></h3><p>A budget option for flexible timelines: drop off and pick up your vehicle at secure terminal yards near major cities.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
+      <article class="svc-card"><img src="images/svc-snowbird.jpg" alt="Car carrier in a palm-lined Florida neighborhood" loading="lazy"><div class="svc-body"><h3><a href="#quote">Snowbird Auto Transport</a></h3><p>Seasonal routes between the Northeast/Midwest and Florida or Arizona. Book early — snowbird season fills up fast.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
+      <article class="svc-card"><img src="images/svc-dealer-auction.jpg" alt="Loaded car carrier leaving a city with dealer inventory" loading="lazy"><div class="svc-body"><h3><a href="#quote">Dealer, Fleet &amp; Auction</a></h3><p>Volume moves for dealerships and fleets, plus fast pickup from Copart, IAA, and Manheim auctions — paperwork handled.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
+    </div>
+    <p style="text-align:center;margin-top:22px;font-size:14.5px">Also available: <a href="#quote"><b>Military &amp; PCS car shipping</b></a> with discounts for active duty, veterans, and their families.</p>
+  </div>
+</section>
+
+<section class="ship" id="what-we-ship">
+  <div class="wrap">
+    <h2>More Than Just Cars</h2>
+    <p class="section-sub">If it rolls, floats, or rides on a trailer, we can move it. Every shipment gets the same vetted-carrier, door-to-door treatment.</p>
+    <div class="ship-grid">
+      <figure class="ship-card"><img src="images/ship-cars-suvs.jpg" alt="Sedans on an open car carrier" loading="lazy"><figcaption>Cars &amp; SUVs</figcaption></figure>
+      <figure class="ship-card"><img src="images/ship-pickup-trucks.jpg" alt="Pickup trucks on a transport carrier" loading="lazy"><figcaption>Pickup Trucks</figcaption></figure>
+      <figure class="ship-card"><img src="images/ship-motorcycles.jpg" alt="Motorcycles strapped inside an enclosed trailer" loading="lazy"><figcaption>Motorcycles</figcaption></figure>
+      <figure class="ship-card"><img src="images/ship-boats.jpg" alt="Boat on a trailer being transported on the highway" loading="lazy"><figcaption>Boats</figcaption></figure>
+      <figure class="ship-card"><img src="images/ship-rvs.jpg" alt="Luxury RV motorhome on a lowboy trailer" loading="lazy"><figcaption>RVs &amp; Motorhomes</figcaption></figure>
+      <figure class="ship-card"><img src="images/ship-atvs.jpg" alt="ATVs secured on a utility trailer" loading="lazy"><figcaption>ATVs &amp; UTVs</figcaption></figure>
+      <figure class="ship-card"><img src="images/ship-jet-skis.jpg" alt="Jet skis on a trailer near the water" loading="lazy"><figcaption>Jet Skis &amp; PWC</figcaption></figure>
+      <figure class="ship-card"><img src="images/ship-heavy-equipment.jpg" alt="Excavator on a lowboy heavy-haul trailer" loading="lazy"><figcaption>Heavy Equipment</figcaption></figure>
+    </div>
+    <div class="price-cta" style="margin-top:28px"><a class="btn btn-blue" href="#quote">Get a Quote for Your Shipment</a></div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <h2>Sample Car Shipping Rates</h2>
+    <p class="section-sub">Recent average prices for popular routes (standard sedan, open transport). Your exact quote depends on vehicle size, season, and pickup dates.</p>
+    <div class="table-scroll">
+    <table class="price-table">
+      <thead><tr><th>Route</th><th>Distance</th><th>Est. Transit Time</th><th>Avg. Price*</th></tr></thead>
+      <tbody>
+        <tr><td>New York, NY → Miami, FL</td><td>1,280 mi</td><td>3–5 days</td><td class="pr">$895 – $1,050</td></tr>
+        <tr><td>Los Angeles, CA → Dallas, TX</td><td>1,435 mi</td><td>4–6 days</td><td class="pr">$950 – $1,150</td></tr>
+        <tr><td>Chicago, IL → Phoenix, AZ</td><td>1,750 mi</td><td>5–7 days</td><td class="pr">$1,050 – $1,250</td></tr>
+        <tr><td>Miami, FL → Los Angeles, CA</td><td>2,730 mi</td><td>7–10 days</td><td class="pr">$1,350 – $1,600</td></tr>
+        <tr><td>Seattle, WA → Boston, MA</td><td>3,050 mi</td><td>8–11 days</td><td class="pr">$1,500 – $1,800</td></tr>
+        <tr><td>Atlanta, GA → Denver, CO</td><td>1,400 mi</td><td>4–6 days</td><td class="pr">$975 – $1,150</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="price-note">*Averages from recent shipments. Enclosed transport typically runs 30–40% higher. Get an exact quote for your route in minutes.</p>
+    <div class="price-cta"><a class="btn btn-orange" href="#quote">Get My Exact Price</a></div>
+  </div>
+</section>
+
+<section class="gal" id="coverage" style="padding-bottom:46px">
+  <div class="wrap">
+    <h2>Our Carriers on the Road</h2>
+    <p class="section-sub">City to coast, farmland to snow country — our carrier network covers all 50 states, year-round.</p>
+  </div>
+  <div class="rail" tabindex="0" aria-label="Photos of our carriers across the country">
+    <figure class="tile"><img src="images/gallery-metros.jpg" alt="Car carrier leaving a downtown skyline"><figcaption>Major metros</figcaption></figure>
+    <figure class="tile"><img src="images/gallery-coastal.jpg" alt="Car carrier on a coastal highway"><figcaption>Coastal routes</figcaption></figure>
+    <figure class="tile"><img src="images/gallery-mountains.jpg" alt="Car carrier passing mountain peaks"><figcaption>Mountain West</figcaption></figure>
+    <figure class="tile"><img src="images/gallery-heartland.jpg" alt="Car carrier on a rural farm road"><figcaption>The Heartland</figcaption></figure>
+    <figure class="tile"><img src="images/gallery-florida.jpg" alt="Car carrier in a palm-lined Florida neighborhood"><figcaption>Florida &amp; Sunbelt</figcaption></figure>
+    <figure class="tile"><img src="images/gallery-northeast.jpg" alt="Car carrier under autumn foliage"><figcaption>The Northeast</figcaption></figure>
+    <figure class="tile"><img src="images/gallery-winter.jpg" alt="Car carrier on a snowy highway"><figcaption>Winter routes</figcaption></figure>
+    <figure class="tile"><img src="images/gallery-appalachia.jpg" alt="Car carrier winding through green hills"><figcaption>Appalachia</figcaption></figure>
+  </div>
+</section>
+
+<section class="rev" id="reviews">
+  <div class="wrap">
+    <h2>What Our Customers Say</h2>
+    <div class="rev-head">
+      <div class="g-badge">
+        <span class="g"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></span>
+        <span><b>4.9</b> <span class="st">★★★★★</span><br><small>512 reviews</small></span>
+      </div>
+    </div>
+    <div class="rev-grid">
+      <article class="rev-card">
+        <div class="rev-top">
+          <div class="avatar" style="background:#4285F4">JD</div>
+          <div><div class="rev-name">James D.</div><div class="rev-date">2 weeks ago</div></div>
+        </div>
+        <div class="st">★★★★★</div>
+        <p>Shipped my Accord from Miami to Chicago. Quote was accurate to the dollar, driver called ahead both days, and the car arrived a day early. Would use again.</p>
+        <div class="rev-route">Miami, FL → Chicago, IL • Open transport</div>
+      </article>
+      <article class="rev-card">
+        <div class="rev-top">
+          <div class="avatar" style="background:#0F9D58">SR</div>
+          <div><div class="rev-name">Sarah R.</div><div class="rev-date">1 month ago</div></div>
+        </div>
+        <div class="st">★★★★★</div>
+        <p>First time shipping a car and I was nervous. Dispatch explained everything, no deposit until pickup was scheduled, and my SUV showed up clean and on time.</p>
+        <div class="rev-route">Los Angeles, CA → New York, NY • Open transport</div>
+      </article>
+      <article class="rev-card">
+        <div class="rev-top">
+          <div class="avatar" style="background:#DB4437">MT</div>
+          <div><div class="rev-name">Michael T.</div><div class="rev-date">2 months ago</div></div>
+        </div>
+        <div class="st">★★★★★</div>
+        <p>We snowbird between New Jersey and Boca Raton and have used National twice now. Same easy process both times — fair price, good communication, zero damage.</p>
+        <div class="rev-route">Newark, NJ → Boca Raton, FL • Enclosed</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <h2>Why Ship With National Auto Transport</h2>
+    <div class="why-grid">
+      <div class="why-cell"><h3><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Licensed &amp; Bonded</h3><p>FMCSA-registered broker (MC #158942). Every carrier we dispatch is verified for active authority and insurance before your car is loaded.</p></div>
+      <div class="why-cell"><h3><svg viewBox="0 0 24 24"><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/></svg>No Hidden Fees</h3><p>Your quote is all-in: fuel, taxes, insurance, and door-to-door service included. The price we quote is the price you pay.</p></div>
+      <div class="why-cell"><h3><svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>No Upfront Deposit</h3><p>You don't pay a cent until a carrier is assigned and your pickup is scheduled. No-risk quotes, cancel anytime before dispatch.</p></div>
+      <div class="why-cell"><h3><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Vetted Carrier Network</h3><p>We work with 8,000+ pre-screened carriers and check safety ratings, insurance certificates, and performance history on every dispatch.</p></div>
+      <div class="why-cell"><h3><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Shipment Updates</h3><p>Your dispatch coordinator keeps you posted from pickup to delivery, and you can reach your driver directly while your car is in transit.</p></div>
+      <div class="why-cell"><h3><svg viewBox="0 0 24 24"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>Real Human Support</h3><p>Call, text, or email and reach an actual dispatch coordinator — 7 days a week, 8am to 9pm ET. No phone trees, no runaround.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq faq-list">
+      <details open>
+        <summary>How much does it cost to ship a car?</summary>
+        <div class="a">Most coast-to-coast shipments run $1,300–$1,700 for a standard sedan on an open carrier; shorter routes (under 500 miles) often run $450–$700. Price depends on distance, vehicle size, running condition, season, and open vs. enclosed transport. Get an exact quote above — it's free and takes about a minute.</div>
+      </details>
+      <details>
+        <summary>How long does auto transport take?</summary>
+        <div class="a">Carriers cover roughly 400–500 miles per day. Regional moves usually deliver in 1–3 days, mid-range routes in 3–6 days, and coast-to-coast in 7–10 days. Pickup windows are typically 1–5 business days from your first available date.</div>
+      </details>
+      <details>
+        <summary>Is my car insured during shipping?</summary>
+        <div class="a">Yes. Federal law requires every carrier to hold active cargo insurance, and we verify the certificate before dispatch. Your vehicle is covered from the moment it's loaded until it's delivered. We'll gladly send you the carrier's insurance certificate on request.</div>
+      </details>
+      <details>
+        <summary>Should I choose open or enclosed transport?</summary>
+        <div class="a">Open transport is what 90%+ of customers use — it's the same method dealerships use for new cars and costs significantly less. Enclosed transport is worth it for classics, exotics, and vehicles valued over about $70,000, since it protects against weather and road debris.</div>
+      </details>
+      <details>
+        <summary>Do I pay anything upfront?</summary>
+        <div class="a">No. Getting a quote and booking costs nothing. You pay a portion when a carrier is dispatched (usually by card) and the balance to the driver at delivery by cash, cashier's check, or Zelle. If we never dispatch a carrier, you owe nothing.</div>
+      </details>
+      <details>
+        <summary>Can I put personal items in the car?</summary>
+        <div class="a">Most carriers allow up to 100 lbs of personal items in the trunk or below window level. Items aren't covered by cargo insurance, so keep valuables with you. Let us know at booking so we note it on the dispatch.</div>
+      </details>
+      <details>
+        <summary>Can you ship a car that doesn't run?</summary>
+        <div class="a">Yes — we ship inoperable vehicles regularly. Just tell us at booking so we assign a carrier with a winch. Non-running vehicles typically add $100–$200 to the quote.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="tips" style="background:var(--bg-gray)">
+  <div class="wrap">
+    <h2>Car Shipping Tips &amp; Guides</h2>
+    <p class="section-sub">New to auto transport? These quick guides cover what most first-time shippers ask us.</p>
+    <div class="tips-grid">
+      <article class="tip-card">
+        <img src="images/tip-cost-factors.jpg" alt="Open and enclosed auto carriers side by side on the highway" loading="lazy">
+        <div class="tip-body">
+          <span class="tag">Pricing</span>
+          <h3>What Affects Car Shipping Cost?</h3>
+          <p>Distance, vehicle size, running condition, open vs. enclosed, season, and route popularity all move the price. Here's how each factor works — and how to keep your quote down.</p>
+        </div>
+      </article>
+      <article class="tip-card">
+        <img src="images/tip-best-time.jpg" alt="Car carrier on a scenic highway in early morning light" loading="lazy">
+        <div class="tip-body">
+          <span class="tag">Planning</span>
+          <h3>The Best Time to Ship a Car</h3>
+          <p>Rates rise during snowbird season (Oct–Jan southbound, Mar–May northbound) and summer moves. Flexible dates and booking 2–3 weeks ahead usually get the best price.</p>
+        </div>
+      </article>
+      <article class="tip-card">
+        <img src="images/tip-avoid-mistakes.jpg" alt="Vehicle owner preparing a car before transport pickup" loading="lazy">
+        <div class="tip-body">
+          <span class="tag">Checklist</span>
+          <h3>Avoid These Car Shipping Mistakes</h3>
+          <p>Choosing on price alone, skipping the pickup inspection, leaving a full gas tank, and not photographing your car beforehand are the most common — and most avoidable — mistakes.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="seo">
+  <div class="wrap">
+    <h2>A Car Shipping Company You Can Actually Reach</h2>
+    <p>National Auto Transport is a licensed and bonded auto transport broker arranging door-to-door vehicle shipping across all 50 states. Whether you're relocating for work, buying a car out of state, sending a student's car to campus, heading south for the winter, or moving dealer inventory, we match your vehicle with a vetted, insured carrier and manage the shipment from pickup to delivery.</p>
+    <p>Unlike lead-selling websites that blast your phone number to dozens of companies, your quote request comes to us and only us. One dispatch coordinator handles your shipment start to finish, you never pay a deposit before a carrier is assigned, and the all-in price we quote is the price you pay at delivery. Questions before you book? Call <a href="tel:+18885550142"><b>(888) 555-0142</b></a> — a real person answers, 7 days a week.</p>
+  </div>
+</div>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Ready to Ship Your Vehicle?</h2>
+    <p>Get your free, no-obligation quote in about 60 seconds — or call and talk to a dispatch coordinator right now.</p>
+    <div class="cta-btns">
+      <a class="btn btn-orange" href="#quote">Get a Free Quote</a>
+      <a class="btn call" href="tel:+18885550142">Call (888) 555-0142</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="foot-logo"><img src="images/logo.png" alt="National Auto Transport"></span>
+        <p>Licensed, bonded &amp; insured nationwide auto transport broker. Door-to-door car shipping to all 50 states.</p>
+        <p class="foot-lic">MC #158942 &nbsp;•&nbsp; USDOT #2851763<br>FMCSA Licensed Property Broker</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="#pricing">Shipping Rates</a></li>
+          <li><a href="#reviews">Customer Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#quote">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Open Car Transport</a></li>
+          <li><a href="#services">Enclosed Auto Transport</a></li>
+          <li><a href="#services">Door-to-Door Shipping</a></li>
+          <li><a href="#services">Snowbird Car Shipping</a></li>
+          <li><a href="#services">Military Car Shipping</a></li>
+          <li><a href="#services">Dealer &amp; Auction Transport</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="tel:+18885550142">(888) 555-0142</a></li>
+          <li><a href="mailto:quotes@nationalautotransport.com">quotes@nationalautotransport.com</a></li>
+          <li>Mon–Sun, 8am–9pm ET</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 National Auto Transport. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> &nbsp;•&nbsp; <a href="#">Terms of Service</a> &nbsp;•&nbsp; <a href="#">Licensing &amp; Insurance</a></span>
+    </div>
+  </div>
+</footer>
+
+<a class="callbar" href="tel:+18885550142">📞 Call Now: (888) 555-0142</a>
+
+<script>
+document.getElementById('qform').addEventListener('submit',function(e){
+  e.preventDefault();
+  var ok=true;
+  this.querySelectorAll('input[required]').forEach(function(i){
+    if(!i.value.trim()){i.style.borderColor='#D93025';ok=false}else{i.style.borderColor=''}
+  });
+  if(!ok)return;
+  this.style.display='none';
+  document.getElementById('qdone').style.display='block';
+});
+document.querySelectorAll('#navlinks a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.getElementById('navlinks').classList.remove('open');
+    document.querySelector('.nav-toggle').setAttribute('aria-expanded','false');
+  });
+});
+</script>
+</body>
+</html>
