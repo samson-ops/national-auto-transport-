@@ -325,3 +325,8 @@ html,body{overflow-x:hidden;max-width:100%}
   .hero-in{gap:14px}
   #quote iframe{height:600px}
 }
+
+/* Mobile: headline and content first, widget right after */
+@media(max-width:900px){
+  .hero-in #quote{order:0}
+}
