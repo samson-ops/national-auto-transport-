@@ -46,7 +46,6 @@ BEFORE GOING LIVE — REPLACE THESE PLACEHOLDERS
   - Phone number:  (888) 555-0142  (appears in header, hero, CTA, footer,
     mobile call bar — search the file for 8885550142 and 555-0142)
   - Email:         quotes@nationalautotransport.com
-  - MC / USDOT:    MC #158942 / USDOT #2851763 (top bar, badges, footer)
   - Reviews:       sample names/text — swap for real customer reviews
   - Rates table:   sample price ranges — adjust to your actual pricing
                    (homepage AND each city page's route table)
