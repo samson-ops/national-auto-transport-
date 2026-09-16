@@ -303,3 +303,10 @@ html,body{overflow-x:hidden;max-width:100%}
   .hero-in #quote{order:-1}
   .hero-in{padding-top:22px;gap:30px}
 }
+
+/* Mobile: widget as high as possible — hide blue top bar, minimal hero padding */
+@media(max-width:900px){
+  .topbar{display:none}
+  .hero-in{padding-top:10px;padding-bottom:34px}
+  .nav-links{top:64px}
+}
