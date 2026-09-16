@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#00235E">
 <title>National Auto Transport | Nationwide Car Shipping Company</title>
 <meta name="description" content="National Auto Transport is a licensed, bonded and insured auto transport broker. Door-to-door car shipping to all 50 states. Free quotes, no upfront deposit. Call (888) 555-0142.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="canonical" href="https://nationalautoship.com/">
+<link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 
@@ -20,14 +22,14 @@
 
 <nav class="nav" aria-label="Main">
   <div class="wrap nav-in">
-    <a class="brand" href="#top" aria-label="National Auto Transport home"><img src="images/logo.png" alt="National Auto Transport"></a>
+    <a class="brand" href="#top" aria-label="National Auto Transport home"><img src="/images/logo.png" alt="National Auto Transport"></a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks" onclick="var l=document.getElementById('navlinks');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
     <ul class="nav-links" id="navlinks">
-      <li><a href="how-it-works.html">How It Works</a></li>
-      <li><a href="services.html">Services</a></li>
+      <li><a href="/how-it-works/">How It Works</a></li>
+      <li><a href="/services/">Services</a></li>
       <li><a href="#pricing">Pricing</a></li>
-      <li><a href="reviews.html">Reviews</a></li>
-      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="/reviews/">Reviews</a></li>
+      <li><a href="/faq/">FAQ</a></li>
       <li><a class="nav-quote" href="#quote">Free Quote</a></li>
     </ul>
     <div class="nav-phone">
@@ -54,41 +56,12 @@
         <span><b>4.9/5</b> — 512 verified customer reviews</span>
       </div>
     </div>
-    <div class="quote" id="quote">
-      <form id="qform" novalidate>
-        <h2>Get a Free Instant Quote</h2>
-        <p class="q-note">No obligation. No spam. No deposit required.</p>
-        <div class="q-row">
-          <div>
-            <label for="from">Ship FROM (ZIP or city)</label>
-            <input id="from" name="from" placeholder="Boca Raton, FL" required>
-          </div>
-          <div>
-            <label for="to">Ship TO (ZIP or city)</label>
-            <input id="to" name="to" placeholder="Dallas, TX" required>
-          </div>
-        </div>
-        <label for="vehicle">Vehicle (year, make, model)</label>
-        <input id="vehicle" name="vehicle" placeholder="2022 Honda CR-V" required>
-        <div class="q-row">
-          <div>
-            <label for="type">Transport type</label>
-            <select id="type" name="type"><option>Open (most popular)</option><option>Enclosed</option><option>Not sure</option></select>
-          </div>
-          <div>
-            <label for="when">First available date</label>
-            <select id="when" name="when"><option>ASAP</option><option>Within 1 week</option><option>Within 2 weeks</option><option>Flexible</option></select>
-          </div>
-        </div>
-        <label for="phone">Phone number</label>
-        <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" required>
-        <button class="btn btn-orange" type="submit">Get My Free Quote</button>
-        <p class="q-fine">Or call <a href="tel:+18885550142"><b>(888) 555-0142</b></a> to speak with a specialist</p>
-      </form>
-      <div class="q-done" id="qdone">
-        <strong>✓ Quote request received</strong>
-        <p>A shipping specialist will call or text you shortly with your all-in price. Need it now? Call <a href="tel:+18885550142"><b>(888) 555-0142</b></a>.</p>
-      </div>
+    <div id="quote">
+      <iframe src="https://widget.berocker.com?theme=pro&api_base=https%3A%2F%2Fapp.shipguy.com&api_key=6aaadbd0e4304"
+        width="100%"
+        height="680"
+        style="border:0;display:block;width:100%"
+        title="Ship Guy Logistics booking form"></iframe>
     </div>
   </div>
 </header>
@@ -108,7 +81,7 @@
     <p class="section-sub">Shipping a vehicle with us is a simple 3-step process. Most customers book in under 10 minutes.</p>
     <div class="steps-grid">
       <article class="step">
-        <img src="images/step-1-quote.jpg" alt="Auto transport carrier picking up vehicles in a residential neighborhood">
+        <img src="/images/step-1-quote.jpg" alt="Auto transport carrier picking up vehicles in a residential neighborhood">
         <div class="step-body">
           <span class="n">1</span>
           <h3>Get Your Free Quote</h3>
@@ -116,7 +89,7 @@
         </div>
       </article>
       <article class="step">
-        <img src="images/step-2-dispatch.jpg" alt="Driver loading a sedan onto an open auto transport carrier">
+        <img src="/images/step-2-dispatch.jpg" alt="Driver loading a sedan onto an open auto transport carrier">
         <div class="step-body">
           <span class="n">2</span>
           <h3>We Dispatch a Carrier</h3>
@@ -124,7 +97,7 @@
         </div>
       </article>
       <article class="step">
-        <img src="images/step-3-delivery.jpg" alt="Customer photographing and inspecting a vehicle at delivery">
+        <img src="/images/step-3-delivery.jpg" alt="Customer photographing and inspecting a vehicle at delivery">
         <div class="step-body">
           <span class="n">3</span>
           <h3>Your Vehicle Is Delivered</h3>
@@ -140,15 +113,15 @@
     <h2>Our Auto Transport Services</h2>
     <p class="section-sub">From daily drivers to dealer fleets, we ship every type of vehicle on every major route in the country.</p>
     <div class="svc-grid">
-      <article class="svc-card"><img src="images/svc-open-transport.jpg" alt="Open car carrier loaded with sedans on the highway" loading="lazy"><div class="svc-body"><h3><a href="services.html#open">Open Car Transport</a></h3><p>The industry standard and most affordable option. Your vehicle is shipped on an open carrier — the same way dealerships move new cars.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
-      <article class="svc-card"><img src="images/svc-enclosed.jpg" alt="Sports car loading into an enclosed transport trailer" loading="lazy"><div class="svc-body"><h3><a href="services.html#enclosed">Enclosed Auto Transport</a></h3><p>Fully enclosed trailers protect classic, exotic, and luxury vehicles from weather and road debris. Recommended for high-value vehicles.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
-      <article class="svc-card"><img src="images/svc-door-to-door.jpg" alt="Muscle car being unloaded from an enclosed trailer in a driveway" loading="lazy"><div class="svc-body"><h3><a href="services.html#door">Door-to-Door Shipping</a></h3><p>The driver picks up and delivers as close to your address as legally and safely possible. No terminals, no extra trips.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
-      <article class="svc-card"><img src="images/svc-state-to-state.jpg" alt="Car carrier loaded with SUVs crossing state lines" loading="lazy"><div class="svc-body"><h3><a href="services.html#state">State-to-State Shipping</a></h3><p>Next-state-over or across the region, we cover every lane between all 50 states, including Alaska and Hawaii port service.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
-      <article class="svc-card"><img src="images/svc-cross-country.jpg" alt="Auto transport truck on a cross-country mountain highway" loading="lazy"><div class="svc-body"><h3><a href="services.html#cross">Cross-Country Transport</a></h3><p>Coast-to-coast shipping on major interstate lanes, typically delivered in 7–10 days with a single dedicated carrier.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
-      <article class="svc-card"><img src="images/svc-expedited.jpg" alt="Blue transport truck hauling vehicles at sunrise" loading="lazy"><div class="svc-body"><h3><a href="services.html#expedited">Expedited Shipping</a></h3><p>Need your vehicle picked up in 24–48 hours? Expedited dispatch puts your shipment at the front of the line.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
-      <article class="svc-card"><img src="images/svc-terminal.jpg" alt="Car carrier loading vehicles at a terminal yard" loading="lazy"><div class="svc-body"><h3><a href="services.html#terminal">Terminal-to-Terminal</a></h3><p>A budget option for flexible timelines: drop off and pick up your vehicle at secure terminal yards near major cities.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
-      <article class="svc-card"><img src="images/svc-snowbird.jpg" alt="Car carrier in a palm-lined Florida neighborhood" loading="lazy"><div class="svc-body"><h3><a href="services.html#snowbird">Snowbird Auto Transport</a></h3><p>Seasonal routes between the Northeast/Midwest and Florida or Arizona. Book early — snowbird season fills up fast.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
-      <article class="svc-card"><img src="images/svc-dealer-auction.jpg" alt="Loaded car carrier leaving a city with dealer inventory" loading="lazy"><div class="svc-body"><h3><a href="services.html#dealer">Dealer, Fleet &amp; Auction</a></h3><p>Volume moves for dealerships and fleets, plus fast pickup from Copart, IAA, and Manheim auctions — paperwork handled.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
+      <article class="svc-card"><img src="/images/svc-open-transport.jpg" alt="Open car carrier loaded with sedans on the highway" loading="lazy"><div class="svc-body"><h3><a href="/services/#open">Open Car Transport</a></h3><p>The industry standard and most affordable option. Your vehicle is shipped on an open carrier — the same way dealerships move new cars.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
+      <article class="svc-card"><img src="/images/svc-enclosed.jpg" alt="Sports car loading into an enclosed transport trailer" loading="lazy"><div class="svc-body"><h3><a href="/services/#enclosed">Enclosed Auto Transport</a></h3><p>Fully enclosed trailers protect classic, exotic, and luxury vehicles from weather and road debris. Recommended for high-value vehicles.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
+      <article class="svc-card"><img src="/images/svc-door-to-door.jpg" alt="Muscle car being unloaded from an enclosed trailer in a driveway" loading="lazy"><div class="svc-body"><h3><a href="/services/#door">Door-to-Door Shipping</a></h3><p>The driver picks up and delivers as close to your address as legally and safely possible. No terminals, no extra trips.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
+      <article class="svc-card"><img src="/images/svc-state-to-state.jpg" alt="Car carrier loaded with SUVs crossing state lines" loading="lazy"><div class="svc-body"><h3><a href="/services/#state">State-to-State Shipping</a></h3><p>Next-state-over or across the region, we cover every lane between all 50 states, including Alaska and Hawaii port service.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
+      <article class="svc-card"><img src="/images/svc-cross-country.jpg" alt="Auto transport truck on a cross-country mountain highway" loading="lazy"><div class="svc-body"><h3><a href="/services/#cross">Cross-Country Transport</a></h3><p>Coast-to-coast shipping on major interstate lanes, typically delivered in 7–10 days with a single dedicated carrier.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
+      <article class="svc-card"><img src="/images/svc-expedited.jpg" alt="Blue transport truck hauling vehicles at sunrise" loading="lazy"><div class="svc-body"><h3><a href="/services/#expedited">Expedited Shipping</a></h3><p>Need your vehicle picked up in 24–48 hours? Expedited dispatch puts your shipment at the front of the line.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
+      <article class="svc-card"><img src="/images/svc-terminal.jpg" alt="Car carrier loading vehicles at a terminal yard" loading="lazy"><div class="svc-body"><h3><a href="/services/#terminal">Terminal-to-Terminal</a></h3><p>A budget option for flexible timelines: drop off and pick up your vehicle at secure terminal yards near major cities.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
+      <article class="svc-card"><img src="/images/svc-snowbird.jpg" alt="Car carrier in a palm-lined Florida neighborhood" loading="lazy"><div class="svc-body"><h3><a href="/services/#snowbird">Snowbird Auto Transport</a></h3><p>Seasonal routes between the Northeast/Midwest and Florida or Arizona. Book early — snowbird season fills up fast.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
+      <article class="svc-card"><img src="/images/svc-dealer-auction.jpg" alt="Loaded car carrier leaving a city with dealer inventory" loading="lazy"><div class="svc-body"><h3><a href="/services/#dealer">Dealer, Fleet &amp; Auction</a></h3><p>Volume moves for dealerships and fleets, plus fast pickup from Copart, IAA, and Manheim auctions — paperwork handled.</p><a class="svc-more" href="#quote">Get a quote »</a></div></article>
     </div>
     <p style="text-align:center;margin-top:22px;font-size:14.5px">Also available: <a href="#quote"><b>Military &amp; PCS car shipping</b></a> with discounts for active duty, veterans, and their families.</p>
   </div>
@@ -159,14 +132,14 @@
     <h2>More Than Just Cars</h2>
     <p class="section-sub">If it rolls, floats, or rides on a trailer, we can move it. Every shipment gets the same vetted-carrier, door-to-door treatment.</p>
     <div class="ship-grid">
-      <figure class="ship-card"><img src="images/ship-cars-suvs.jpg" alt="Sedans on an open car carrier" loading="lazy"><figcaption>Cars &amp; SUVs</figcaption></figure>
-      <figure class="ship-card"><img src="images/ship-pickup-trucks.jpg" alt="Pickup trucks on a transport carrier" loading="lazy"><figcaption>Pickup Trucks</figcaption></figure>
-      <figure class="ship-card"><img src="images/ship-motorcycles.jpg" alt="Motorcycles strapped inside an enclosed trailer" loading="lazy"><figcaption>Motorcycles</figcaption></figure>
-      <figure class="ship-card"><img src="images/ship-boats.jpg" alt="Boat on a trailer being transported on the highway" loading="lazy"><figcaption>Boats</figcaption></figure>
-      <figure class="ship-card"><img src="images/ship-rvs.jpg" alt="Luxury RV motorhome on a lowboy trailer" loading="lazy"><figcaption>RVs &amp; Motorhomes</figcaption></figure>
-      <figure class="ship-card"><img src="images/ship-atvs.jpg" alt="ATVs secured on a utility trailer" loading="lazy"><figcaption>ATVs &amp; UTVs</figcaption></figure>
-      <figure class="ship-card"><img src="images/ship-jet-skis.jpg" alt="Jet skis on a trailer near the water" loading="lazy"><figcaption>Jet Skis &amp; PWC</figcaption></figure>
-      <figure class="ship-card"><img src="images/ship-heavy-equipment.jpg" alt="Excavator on a lowboy heavy-haul trailer" loading="lazy"><figcaption>Heavy Equipment</figcaption></figure>
+      <figure class="ship-card"><img src="/images/ship-cars-suvs.jpg" alt="Sedans on an open car carrier" loading="lazy"><figcaption>Cars &amp; SUVs</figcaption></figure>
+      <figure class="ship-card"><img src="/images/ship-pickup-trucks.jpg" alt="Pickup trucks on a transport carrier" loading="lazy"><figcaption>Pickup Trucks</figcaption></figure>
+      <figure class="ship-card"><img src="/images/ship-motorcycles.jpg" alt="Motorcycles strapped inside an enclosed trailer" loading="lazy"><figcaption>Motorcycles</figcaption></figure>
+      <figure class="ship-card"><img src="/images/ship-boats.jpg" alt="Boat on a trailer being transported on the highway" loading="lazy"><figcaption>Boats</figcaption></figure>
+      <figure class="ship-card"><img src="/images/ship-rvs.jpg" alt="Luxury RV motorhome on a lowboy trailer" loading="lazy"><figcaption>RVs &amp; Motorhomes</figcaption></figure>
+      <figure class="ship-card"><img src="/images/ship-atvs.jpg" alt="ATVs secured on a utility trailer" loading="lazy"><figcaption>ATVs &amp; UTVs</figcaption></figure>
+      <figure class="ship-card"><img src="/images/ship-jet-skis.jpg" alt="Jet skis on a trailer near the water" loading="lazy"><figcaption>Jet Skis &amp; PWC</figcaption></figure>
+      <figure class="ship-card"><img src="/images/ship-heavy-equipment.jpg" alt="Excavator on a lowboy heavy-haul trailer" loading="lazy"><figcaption>Heavy Equipment</figcaption></figure>
     </div>
     <div class="price-cta" style="margin-top:28px"><a class="btn btn-blue" href="#quote">Get a Quote for Your Shipment</a></div>
   </div>
@@ -200,14 +173,14 @@
     <p class="section-sub">City to coast, farmland to snow country — our carrier network covers all 50 states, year-round.</p>
   </div>
   <div class="rail" tabindex="0" aria-label="Photos of our carriers across the country">
-    <figure class="tile"><img src="images/gallery-metros.jpg" alt="Car carrier leaving a downtown skyline"><figcaption>Major metros</figcaption></figure>
-    <figure class="tile"><img src="images/gallery-coastal.jpg" alt="Car carrier on a coastal highway"><figcaption>Coastal routes</figcaption></figure>
-    <figure class="tile"><img src="images/gallery-mountains.jpg" alt="Car carrier passing mountain peaks"><figcaption>Mountain West</figcaption></figure>
-    <figure class="tile"><img src="images/gallery-heartland.jpg" alt="Car carrier on a rural farm road"><figcaption>The Heartland</figcaption></figure>
-    <figure class="tile"><img src="images/gallery-florida.jpg" alt="Car carrier in a palm-lined Florida neighborhood"><figcaption>Florida &amp; Sunbelt</figcaption></figure>
-    <figure class="tile"><img src="images/gallery-northeast.jpg" alt="Car carrier under autumn foliage"><figcaption>The Northeast</figcaption></figure>
-    <figure class="tile"><img src="images/gallery-winter.jpg" alt="Car carrier on a snowy highway"><figcaption>Winter routes</figcaption></figure>
-    <figure class="tile"><img src="images/gallery-appalachia.jpg" alt="Car carrier winding through green hills"><figcaption>Appalachia</figcaption></figure>
+    <figure class="tile"><img src="/images/gallery-metros.jpg" alt="Car carrier leaving a downtown skyline"><figcaption>Major metros</figcaption></figure>
+    <figure class="tile"><img src="/images/gallery-coastal.jpg" alt="Car carrier on a coastal highway"><figcaption>Coastal routes</figcaption></figure>
+    <figure class="tile"><img src="/images/gallery-mountains.jpg" alt="Car carrier passing mountain peaks"><figcaption>Mountain West</figcaption></figure>
+    <figure class="tile"><img src="/images/gallery-heartland.jpg" alt="Car carrier on a rural farm road"><figcaption>The Heartland</figcaption></figure>
+    <figure class="tile"><img src="/images/gallery-florida.jpg" alt="Car carrier in a palm-lined Florida neighborhood"><figcaption>Florida &amp; Sunbelt</figcaption></figure>
+    <figure class="tile"><img src="/images/gallery-northeast.jpg" alt="Car carrier under autumn foliage"><figcaption>The Northeast</figcaption></figure>
+    <figure class="tile"><img src="/images/gallery-winter.jpg" alt="Car carrier on a snowy highway"><figcaption>Winter routes</figcaption></figure>
+    <figure class="tile"><img src="/images/gallery-appalachia.jpg" alt="Car carrier winding through green hills"><figcaption>Appalachia</figcaption></figure>
   </div>
 </section>
 
@@ -308,7 +281,7 @@
     <p class="section-sub">New to auto transport? These quick guides cover what most first-time shippers ask us.</p>
     <div class="tips-grid">
       <article class="tip-card">
-        <img src="images/tip-cost-factors.jpg" alt="Open and enclosed auto carriers side by side on the highway" loading="lazy">
+        <img src="/images/tip-cost-factors.jpg" alt="Open and enclosed auto carriers side by side on the highway" loading="lazy">
         <div class="tip-body">
           <span class="tag">Pricing</span>
           <h3>What Affects Car Shipping Cost?</h3>
@@ -316,7 +289,7 @@
         </div>
       </article>
       <article class="tip-card">
-        <img src="images/tip-best-time.jpg" alt="Car carrier on a scenic highway in early morning light" loading="lazy">
+        <img src="/images/tip-best-time.jpg" alt="Car carrier on a scenic highway in early morning light" loading="lazy">
         <div class="tip-body">
           <span class="tag">Planning</span>
           <h3>The Best Time to Ship a Car</h3>
@@ -324,7 +297,7 @@
         </div>
       </article>
       <article class="tip-card">
-        <img src="images/tip-avoid-mistakes.jpg" alt="Vehicle owner preparing a car before transport pickup" loading="lazy">
+        <img src="/images/tip-avoid-mistakes.jpg" alt="Vehicle owner preparing a car before transport pickup" loading="lazy">
         <div class="tip-body">
           <span class="tag">Checklist</span>
           <h3>Avoid These Car Shipping Mistakes</h3>
@@ -358,29 +331,32 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <span class="foot-logo"><img src="images/logo.png" alt="National Auto Transport"></span>
+        <span class="foot-logo"><img src="/images/logo.png" alt="National Auto Transport"></span>
         <p>Licensed, bonded &amp; insured nationwide auto transport broker. Door-to-door car shipping to all 50 states.</p>
         <p class="foot-lic">MC #158942 &nbsp;•&nbsp; USDOT #2851763<br>FMCSA Licensed Property Broker</p>
       </div>
       <div>
         <h4>Company</h4>
         <ul>
-          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="/how-it-works/">How It Works</a></li>
           <li><a href="#pricing">Shipping Rates</a></li>
-          <li><a href="reviews.html">Customer Reviews</a></li>
-          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="/reviews/">Customer Reviews</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/locations/">Our Locations</a></li>
           <li><a href="#quote">Get a Quote</a></li>
         </ul>
       </div>
       <div>
         <h4>Services</h4>
         <ul>
-          <li><a href="services.html#open">Open Car Transport</a></li>
-          <li><a href="services.html#enclosed">Enclosed Auto Transport</a></li>
-          <li><a href="services.html#door">Door-to-Door Shipping</a></li>
-          <li><a href="services.html#snowbird">Snowbird Car Shipping</a></li>
-          <li><a href="services.html">Military Car Shipping</a></li>
-          <li><a href="services.html#dealer">Dealer &amp; Auction Transport</a></li>
+          <li><a href="/services/#open">Open Car Transport</a></li>
+          <li><a href="/services/#enclosed">Enclosed Auto Transport</a></li>
+          <li><a href="/services/#door">Door-to-Door Shipping</a></li>
+          <li><a href="/services/#snowbird">Snowbird Car Shipping</a></li>
+          <li><a href="/services/">Military Car Shipping</a></li>
+          <li><a href="/services/#dealer">Dealer &amp; Auction Transport</a></li>
+          <li><a href="/locations/"><b>All 25 Locations »</b></a></li>
+          <li><a href="/locations/"><b>All 25 Locations »</b></a></li>
         </ul>
       </div>
       <div>
@@ -402,16 +378,6 @@
 <a class="callbar" href="tel:+18885550142">📞 Call Now: (888) 555-0142</a>
 
 <script>
-document.getElementById('qform').addEventListener('submit',function(e){
-  e.preventDefault();
-  var ok=true;
-  this.querySelectorAll('input[required]').forEach(function(i){
-    if(!i.value.trim()){i.style.borderColor='#D93025';ok=false}else{i.style.borderColor=''}
-  });
-  if(!ok)return;
-  this.style.display='none';
-  document.getElementById('qdone').style.display='block';
-});
 document.querySelectorAll('#navlinks a').forEach(function(a){
   a.addEventListener('click',function(){
     document.getElementById('navlinks').classList.remove('open');
