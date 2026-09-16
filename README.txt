@@ -2,12 +2,18 @@ NATIONAL AUTO TRANSPORT — WEBSITE PACKAGE
 =========================================
 
 CONTENTS
-  index.html            The complete homepage (all CSS/JS is inside this one file)
+  index.html            Homepage
+  how-it-works.html     Step-by-step shipping process + vehicle prep checklist
+  services.html         All 9 services in detail + "We Also Ship" section
+  reviews.html          Rating summary + customer reviews
+  faq.html              Full FAQ grouped by category
+  css/                  styles.css (shared) and pages.css (interior pages)
   images/               All site images, named by where they're used
 
 HOW TO USE
   1. Preview: double-click index.html to open it in any browser.
-  2. Deploy: upload index.html and the images/ folder together to any
+     All pages link to each other with relative paths.
+  2. Deploy: upload ALL html files plus the css/ and images/ folders together to any
      web host (Netlify, Vercel, cPanel, GoDaddy, Hostinger, etc.).
      Keep the folder structure exactly as-is.
 
