@@ -226,9 +226,6 @@ footer{background:#0F1622;color:#9AA6B8;padding:48px 0 26px;font-size:14px}
 .foot-bot{border-top:1px solid #232E40;margin-top:38px;padding-top:20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12.5px;color:#7C8898}
 @media(max-width:860px){.foot-grid{grid-template-columns:1fr 1fr}}
 
-/* MOBILE CALL BAR */
-.callbar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--orange);color:#fff;text-align:center;padding:13px;font-weight:900;font-size:17px;text-decoration:none;box-shadow:0 -3px 12px rgba(0,0,0,.2)}
-@media(max-width:760px){.callbar{display:block}body{padding-bottom:52px}}
 
 /* ===== Cross-browser & mobile hardening ===== */
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
@@ -249,9 +246,6 @@ a:focus:not(:focus-visible),button:focus:not(:focus-visible),summary:focus:not(:
 /* Mobile menu: scrollable if taller than the screen */
 .nav-links.open{max-height:calc(100vh - 78px);max-height:calc(100dvh - 78px);overflow-y:auto}
 
-/* Notched phones: keep the call bar above the home indicator */
-.callbar{padding-bottom:calc(13px + env(safe-area-inset-bottom,0px))}
-@media(max-width:760px){body{padding-bottom:calc(52px + env(safe-area-inset-bottom,0px))}}
 
 /* Small phones (≤480px) */
 @media(max-width:480px){
@@ -289,7 +283,7 @@ a:focus:not(:focus-visible),button:focus:not(:focus-visible),summary:focus:not(:
 @media(min-width:1600px){.hero-bg{background-position:center 55%}}
 /* Print */
 @media print{
-  .callbar,.nav-toggle,.topbar{display:none!important}
+  .nav-toggle,.topbar{display:none!important}
   .nav{position:static;box-shadow:none}
   a{color:#000;text-decoration:none}
 }
@@ -297,3 +291,15 @@ a:focus:not(:focus-visible),button:focus:not(:focus-visible),summary:focus:not(:
 /* Booking widget iframe (bare, no card) */
 #quote iframe{width:100%;border:0;display:block}
 @media(max-width:900px){#quote iframe{height:640px}}
+
+/* No horizontal wiggle on mobile */
+html,body{overflow-x:hidden;max-width:100%}
+.nav-in{min-width:0}
+.brand{flex-shrink:0}
+@media(max-width:360px){.brand img{height:30px}.nav-phone a{font-size:14px}}
+
+/* Mobile: booking widget first in the hero, visible without scrolling */
+@media(max-width:900px){
+  .hero-in #quote{order:-1}
+  .hero-in{padding-top:22px;gap:30px}
+}

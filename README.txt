@@ -42,9 +42,11 @@ COMPATIBILITY
   safe-area padding for notched iPhones, 44px+ tap targets, scrollable
   tables, and layouts tested down to 320px-wide screens.
 
+PHONE NUMBERS
+  Main number (866) 459-6389 appears on the homepage and all non-city
+  pages. Each city page uses its own local office number throughout.
+
 BEFORE GOING LIVE — REPLACE THESE PLACEHOLDERS
-  - Phone number:  (888) 555-0142  (appears in header, hero, CTA, footer,
-    mobile call bar — search the file for 8885550142 and 555-0142)
   - Email:         quotes@nationalautotransport.com
   - Reviews:       sample names/text — swap for real customer reviews
   - Rates table:   sample price ranges — adjust to your actual pricing
